@@ -17,6 +17,7 @@ const Button = ({ children, className, hover = "", onClick }: ButtonProps) => {
     setTriggerRef,
     visible,
   } = usePopperTooltip({delayHide: 100, delayShow: 100, offset: [0, 10], placement: 'top'})
+  console.log("rerender")
   return (
     <>
       <button

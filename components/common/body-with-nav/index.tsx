@@ -9,7 +9,9 @@ const BodyWithNav = ({ children }: BodyWithTopNavProps) => {
   return (
     <div className="bg-purple-main flex-1 flex flex-col">
       <TopNavigation />
-      <div className="flex-1">{children}</div>
+      <div className="flex-1">
+        <div>{children}</div>
+      </div>
     </div>
   )
 }

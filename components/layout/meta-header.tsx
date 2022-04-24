@@ -4,7 +4,7 @@ import React from 'react'
 const MetaHeader = () => {
   return (
     <Head>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/images/zing-icon.png" />
       <meta
         name="description"
         content="A Next.js implementation of zing-mp3.com"
