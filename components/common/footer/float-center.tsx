@@ -46,7 +46,7 @@ const FloatCenter = () => {
           <RepeatButton/>
         </div>
       </div>
-      <div className="w-3/4 flex items-center gap-4 -mt-2">
+      <div className="w-3/4 flex items-center gap-4 -mt-2 select-none">
         <span className="text-sm text-white-secondary">0:00</span>
         <SongTimeControl />
         <span className="text-sm text-white-secondary">3:17</span>

@@ -1,0 +1,31 @@
+@import '../utils/index';
+.volume {
+  @apply relative flex gap-2 items-center;
+  &:hover {
+    .volume__slider, .volume__tmp-bg  {
+      display: block
+    }
+  }
+}
+
+.volume__tmp-bg {
+  @apply absolute w-full h-5 inset-x-0 -top-5 hidden;
+}
+
+.volume__slider {
+  //some CSS
+  @include breakpoint-down('xl') {
+    position: absolute;
+    bottom: 2.4rem;
+    left: -2.9rem;
+    width: 9rem;
+    padding: 0.3rem 1.2rem;
+    display: none;
+    background-color: #353535;
+    @apply rounded
+  }
+  @include breakpoint-up('xl') {
+    display: block;
+    width: 5rem;
+  }
+}

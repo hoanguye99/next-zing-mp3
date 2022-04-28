@@ -16,7 +16,7 @@ const RangeSlider = ({value, onChange} : RangeSliderProps) => {
       step={2}
       value={value}
       onChange={(nextValue) => onChange(nextValue as number)}
-      className="cursor-pointer"
+      className="cursor-pointer select-none"
       railStyle={{
         height: 2,
         backgroundColor: '#595560',
@@ -28,6 +28,7 @@ const RangeSlider = ({value, onChange} : RangeSliderProps) => {
       handleStyle={{
         borderColor: '#FFFFFF',
         boxShadow: 'none',
+        opacity: '1'
       }}
     />
   )
