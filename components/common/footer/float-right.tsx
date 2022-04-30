@@ -11,7 +11,7 @@ const FloatRight = () => {
     <div className="flex-[2_2_0%] flex gap-2 justify-end items-center">
       <Lyrics />
       <VolumeControl />
-      <div className="border-[1px] h-7 text-[#2A2533] mx-1"></div>
+      <div className="border-[1px] h-7 text-[#2A2533] mx-1 xl:ml-4"></div>
       <Button onClick={() => setShowTrackList!(prev => !prev)} className="" hover="Danh sách phát">
         <i className="icon before:content-['\49']"></i>
       </Button>

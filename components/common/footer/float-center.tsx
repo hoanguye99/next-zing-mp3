@@ -1,23 +1,27 @@
 import Button from '@/components/styled/button'
 import { RepeatStatus, ShuffleStatus } from '@/models/layout'
+import Image from 'next/image'
 import { useState } from 'react'
 import RangeSlider from './range-slider'
 
 const FloatCenter = () => {
   function getNextSongInfo() {
     return (
-      <div className="flex flex-col p-1 gap-2 w-[16rem]">
+      <div className="flex flex-col p-1 gap-2 w-[16rem] truncate">
         <div className="text-sm text-white-secondary">Phát tiếp theo</div>
-        <div className="flex">
-          <img
-            src="/images/footer-img.webp"
-            className="rounded w-[40px]"
-            height={40}
-            width={40}
-          />
+        <div className="flex truncate">
+          <div>
+            <Image
+              layout="fixed"
+              src="/images/footer-img.webp"
+              className="rounded shrink-0"
+              height={40}
+              width={40}
+            />
+          </div>
           <div className="ml-3 truncate ">
-            <p className="text-base">Feels With Me</p>
-            <p className="text-sm text-white-secondary ">
+            <p className="text-base truncate">Feels With Me</p>
+            <p className="text-sm text-white-secondary truncate">
               Thiều Bảo Trâm, Jin Tuấn Nam, Sin Thiện Tâm, WinC, HOA HỒNG ĐẠI
               MUSIC
             </p>
@@ -43,7 +47,7 @@ const FloatCenter = () => {
           <Button className="" hover={getNextSongInfo()}>
             <i className="icon before:content-['\4e']"></i>
           </Button>
-          <RepeatButton/>
+          <RepeatButton />
         </div>
       </div>
       <div className="w-3/4 flex items-center gap-4 -mt-2 select-none">

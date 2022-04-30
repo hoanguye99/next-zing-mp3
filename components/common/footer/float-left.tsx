@@ -2,6 +2,7 @@ import Button from '@/components/styled/button'
 import Image from 'next/image'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import PopUp from '@/components/common/pop-up'
+import styles from '@/styles/footer/float-left.module.scss'
 
 const FloatLeft = () => {
   const [showSongInfo, setShowSongInfo] = useState(false)
@@ -23,21 +24,23 @@ const FloatLeft = () => {
 
   return (
     <>
-      <Image
-        layout="fixed"
-        src="/images/footer-img.webp"
-        className="rounded"
-        height={64}
-        width={64}
-      />
       <div className="flex items-center flex-[2_2_0%] truncate">
-        <div className="ml-3 truncate ">
-          <div className={scrollSongName ? 'scrolling-title' : ''}>
-            <p ref={songNameRef} className="text-sm">
+        <div>
+          <Image
+            layout="fixed"
+            src="/images/footer-img.webp"
+            className="rounded"
+            height={64}
+            width={64}
+          />
+        </div>
+        <div className="ml-3 truncate">
+          <div className={scrollSongName ? styles['scrolling-title'] : ''}>
+            <p ref={songNameRef} className="text-song">
               Feels With Me
             </p>
           </div>
-          <p className="text-xs text-white-secondary ">
+          <p className="text-artists truncate">
             Thiều Bảo Trâm, Jin Tuấn Nam, Sin Thiện Tâm, WinC, HOA HỒNG ĐẠI
             MUSIC
           </p>
@@ -80,12 +83,12 @@ const FloatLeft = () => {
                     width={40}
                   />
                   <div className="flex flex-col text-sm truncate">
-                    <p className="">Feels with me</p>
-                    <div className="flex gap-2 text-[#A0A0A0]">
+                    <p className="text-song">Feels with me</p>
+                    <div className="flex items-center gap-2 text-[#A0A0A0]">
                       <i className="icon before:content-['\3b']"></i>
-                      <span>3K</span>
+                      <span className="text-artists">3K</span>
                       <i className="icon before:content-['\3b']"></i>
-                      <span>102K</span>
+                      <span className="text-artists">102K</span>
                     </div>
                   </div>
                 </div>
@@ -109,29 +112,27 @@ const FloatLeft = () => {
               <div className="flex flex-col">
                 <button className="px-3 py-2 flex gap-3 hover:bg-[#573884]">
                   <i className="icon before:content-['\29']"></i>
-                  <p className="text-sm text-[#DADADA]">Cài đặt nhạc chờ</p>
+                  <p className="text-options">Cài đặt nhạc chờ</p>
                 </button>
                 <button className="px-3 py-2 flex gap-3 hover:bg-[#573884]">
                   <i className="icon before:content-['\ea09']"></i>
-                  <p className="text-sm text-[#DADADA]">Thêm vào playlist</p>
+                  <p className="text-options">Thêm vào playlist</p>
                 </button>
                 <button className="px-3 py-2 flex gap-3 hover:bg-[#573884]">
                   <i className="icon before:content-['\46']"></i>
-                  <p className="text-sm text-[#DADADA]">
-                    Phát cùng lời bài hát
-                  </p>
+                  <p className="text-options">Phát cùng lời bài hát</p>
                 </button>
                 <button className="px-3 py-2 flex gap-3 hover:bg-[#573884]">
                   <i className="icon before:content-['\71']"></i>
-                  <p className="text-sm text-[#DADADA]">Bình luận</p>
+                  <p className="text-options">Bình luận</p>
                 </button>
                 <button className="px-3 py-2 flex gap-3 hover:bg-[#573884]">
                   <i className="icon before:content-['\48']"></i>
-                  <p className="text-sm text-[#DADADA]">Sao chép link</p>
+                  <p className="text-options">Sao chép link</p>
                 </button>
                 <button className="px-3 py-2 flex gap-3 hover:bg-[#573884] rounded-b-lg">
                   <i className="icon before:content-['\2c']"></i>
-                  <p className="text-sm text-[#DADADA]">Chia sẻ</p>
+                  <p className="text-options">Chia sẻ</p>
                 </button>
               </div>
             </div>

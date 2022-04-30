@@ -10,10 +10,10 @@ export function MainLayout({ children }: LayoutProps) {
   return (
     <>
       <MetaHeader />
-      <div className="h-screen flex flex-col text-white-main tracking-tight">
+      <div className="text-white-main tracking-tight">
         <TrackListProvider>
-            <Main>{children}</Main>
-            <Footer />
+          <Main>{children}</Main>
+          <Footer />
         </TrackListProvider>
       </div>
     </>

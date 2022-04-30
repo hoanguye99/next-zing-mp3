@@ -10,7 +10,7 @@ const Home: NextPageWithLayout = () => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <p>So ICONIC</p>
+      <p>Main Thing Baby</p>
     </>
   )
 }
