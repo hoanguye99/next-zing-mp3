@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { TrackListType } from '@/models/layout'
+import { TrackListType } from '@/models/common/track-list'
 import NextView from './next-view'
 import RecentView from './recent-view'
-import styles from '@/styles/layout/track-list.module.scss'
+import styles from '@/styles/common/track-list/track-list.module.scss'
 import { ShowTrackListContext } from '@/components/context'
 
 interface TrackListProps {
@@ -57,5 +57,3 @@ const View = ({ trackListType }: ViewProps) => {
 }
 
 export default TrackList
-
-// #2A2039

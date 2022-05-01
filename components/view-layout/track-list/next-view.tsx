@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useCallback, useRef, useState } from 'react'
 import data from '@/data/trackList.json'
 import Button from '@/components/styled/button'
 import Image from 'next/image'
+import PopUp from '../../common/pop-up'
+import MoreInfoCard from '../../common/more-info-card'
+import ExtraInfoButton from '../../common/extra-info-button'
 
 const NextView = () => {
   const arr = data.data.items
@@ -48,13 +51,7 @@ const Song = ({ artists, thumbnail, title }: SongProps) => {
         <Button className="" hover="Thêm vào thư viện">
           <i className="icon before:content-['\3b']"></i>
         </Button>
-        <Button
-          className="ml-2"
-          hover="Xem thêm"
-          // onClick={handleExtraInfoClick}
-        >
-          <i className="icon before:content-['\4a']"></i>
-        </Button>
+        <ExtraInfoButton thumbnail={thumbnail} title={title} />
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import Button from '@/components/styled/button'
-import { RepeatStatus, ShuffleStatus } from '@/models/layout'
+import { RepeatStatus, ShuffleStatus } from '@/models/view-layout'
 import Image from 'next/image'
 import { useState } from 'react'
 import RangeSlider from './range-slider'

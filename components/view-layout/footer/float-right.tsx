@@ -1,7 +1,7 @@
 import Button from '@/components/styled/button'
 import { useContext, useRef, useState } from 'react'
 import RangeSlider from './range-slider'
-import styles from '@/styles/footer/float-right.module.scss'
+import styles from '@/styles/view-layout/footer/float-right.module.scss'
 import Portal from '@/components/portal'
 import { SetShowTrackListContext } from '@/components/context'
 
