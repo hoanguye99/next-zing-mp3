@@ -1,7 +1,6 @@
-import React, { ReactNode, useContext } from 'react'
+import React, { ReactNode } from 'react'
 import TopNavigation from '../top-navigation'
 import TrackList from '../track-list'
-import { ShowTrackListContext } from '@/components/context'
 
 type BodyWithTopNavProps = {
   children: ReactNode
@@ -9,26 +8,20 @@ type BodyWithTopNavProps = {
 
 const BodyWithNav = ({ children }: BodyWithTopNavProps) => {
   return (
-    <div className="flex-1 bg-purple-main flex">
+    <div className="flex-1 bg-purple-main relative">
 
-      <div className="flex-1 flex flex-col w-body overflow-y-auto">
+      <div className="flex flex-col overflow-y-auto">
         <TopNavigation />
         <div className="flex-1">
           <div>{children}</div>
         </div>
       </div>
 
-
-      <ShowTrackList />
-
+      <TrackList />
 
     </div>
   )
 }
 
-const ShowTrackList = () => {
-  const showTrackList = useContext(ShowTrackListContext)
-  return showTrackList ? <TrackList /> : null
-}
 
 export default BodyWithNav

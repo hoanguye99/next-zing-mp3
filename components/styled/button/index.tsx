@@ -17,7 +17,10 @@ const Button = ({ children, className, hover = "", onClick }: ButtonProps) => {
     setTriggerRef,
     visible,
   } = usePopperTooltip({delayHide: 100, delayShow: 100, offset: [0, 10], placement: 'top'})
-  console.log("rerender")
+  let toolTip = hover;
+  if (typeof hover === "string") {
+    toolTip = <p className="text-[11px]">{hover}</p>
+  }
   return (
     <>
       <button
@@ -33,7 +36,7 @@ const Button = ({ children, className, hover = "", onClick }: ButtonProps) => {
           {...getTooltipProps({ className: styles['tooltip-container'] })}
         >
           <div {...getArrowProps({ className: styles['tooltip-arrow'] })} />
-          {hover}
+          {toolTip}
         </div>
       )}
     </>

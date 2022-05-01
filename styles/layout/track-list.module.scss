@@ -1,0 +1,29 @@
+.track-list-open {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+
+  animation-name: open;
+  animation-duration: 0.3s;
+}
+
+@keyframes open {
+  0%   {right: -330px;}
+  100% {right: 0px;}
+}
+
+.track-list-close {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: -330px;
+
+  animation-name: close;
+  animation-duration: 0.3s;
+}
+
+@keyframes close {
+  0%   {right: 0px;}
+  100% {right: -330px;}
+}

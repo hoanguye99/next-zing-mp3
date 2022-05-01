@@ -8,7 +8,7 @@ const FloatCenter = () => {
   function getNextSongInfo() {
     return (
       <div className="flex flex-col p-1 gap-2 w-[16rem] truncate">
-        <div className="text-sm text-white-secondary">Phát tiếp theo</div>
+        <div className="text-xs text-white-secondary">Phát tiếp theo</div>
         <div className="flex truncate">
           <div>
             <Image
@@ -20,8 +20,8 @@ const FloatCenter = () => {
             />
           </div>
           <div className="ml-3 truncate ">
-            <p className="text-base truncate">Feels With Me</p>
-            <p className="text-sm text-white-secondary truncate">
+            <p className="text-sm truncate">Feels With Me</p>
+            <p className="text-xs text-white-secondary truncate">
               Thiều Bảo Trâm, Jin Tuấn Nam, Sin Thiện Tâm, WinC, HOA HỒNG ĐẠI
               MUSIC
             </p>
