@@ -32,7 +32,7 @@ const FloatCenter = () => {
   }
 
   return (
-    <div className="flex-[4_4_0%] flex flex-col items-center -mt-2">
+    <div className="max-w-xl w-full mx-3 col-span-4 flex flex-col items-center">
       <div className="flex items-center">
         <div className="flex gap-5">
           <ShuffleButton />
@@ -50,7 +50,7 @@ const FloatCenter = () => {
           <RepeatButton />
         </div>
       </div>
-      <div className="w-3/4 flex items-center gap-4 -mt-2 select-none">
+      <div className="w-full lg:w-3/4 flex items-center gap-4 -mt-2 select-none">
         <span className="text-sm text-white-secondary">0:00</span>
         <SongTimeControl />
         <span className="text-sm text-white-secondary">3:17</span>

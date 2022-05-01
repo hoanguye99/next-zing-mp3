@@ -5,7 +5,7 @@ import FloatCenter from './float-center'
 
 const Footer = () => {
   return (
-    <div className="h-[90px] fixed bottom-0 right-0 left-0 bg-purple-footer px-[20px] flex justify-between items-center">
+    <div className="h-[90px] fixed bottom-0 right-0 left-0 bg-purple-footer px-[20px] flex lg:grid lg:grid-cols-8">
       <FloatLeft />
       <FloatCenter />
       <FloatRight />

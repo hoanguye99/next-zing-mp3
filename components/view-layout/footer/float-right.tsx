@@ -8,7 +8,7 @@ import { SetShowTrackListContext } from '@/components/context'
 const FloatRight = () => {
   const setShowTrackList = useContext(SetShowTrackListContext);
   return (
-    <div className="flex-[2_2_0%] flex gap-2 justify-end items-center">
+    <div className="col-span-2 flex gap-2 justify-end items-center">
       <Lyrics />
       <VolumeControl />
       <div className="border-[1px] h-7 text-[#2A2533] mx-1 xl:ml-4"></div>

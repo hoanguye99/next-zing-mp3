@@ -6,7 +6,7 @@ type ButtonProps = {
   children: React.ReactNode
   className: string
   hover?: string | React.ReactNode
-  onClick?: () => void
+  onClick?: (e : React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 
 const Button = ({ children, className, hover = "", onClick }: ButtonProps) => {

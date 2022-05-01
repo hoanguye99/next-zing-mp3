@@ -1,5 +1,6 @@
 .track-list-open {
   position: absolute;
+  z-index: 20;
   top: 0px;
   bottom: 0px;
   right: 0px;
@@ -15,6 +16,7 @@
 
 .track-list-close {
   position: absolute;
+  z-index: 20;
   top: 0px;
   bottom: 0px;
   right: -330px;
