@@ -5,25 +5,16 @@ import RecentView from './recent-view'
 import styles from '@/styles/layout/track-list.module.scss'
 import { ShowTrackListContext } from '@/components/context'
 
-// interface TrackListProps {
-//   open: boolean
-// }
+interface TrackListProps {
+  open: boolean
+}
 
-const TrackList = () => {
-  const showTrackList = useContext(ShowTrackListContext);
-  const [firstRender, setFirstRender] = useState(true)
+const TrackList = ({open} : TrackListProps) => {
   const [trackListType, setTrackListType] = useState<TrackListType>(
     TrackListType.PLAYING_NEXT
   )
-  useEffect(() => setFirstRender(false), [])
-  if ((firstRender && !showTrackList)) {
-    console.log(firstRender);
-    return null
-  }
-  // console.log(showTrackList);
-  console.log('return original');
   return (
-    <div className={showTrackList ? styles['track-list-open'] : styles['track-list-close']}>
+    <div className={ open ? styles['track-list-open'] : styles['track-list-close']}>
       <div className="bg-[#120822] w-[330px] overflow-y-auto scroll-none absolute inset-y-0 right-0">
         <div className="flex justify-center text-sm gap-6 my-3">
           <button
