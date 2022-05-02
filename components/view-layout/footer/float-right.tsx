@@ -31,7 +31,7 @@ const Lyrics = () => {
       </Button>
       {showLyricsModal && (
         <Portal>
-          <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-white-main">
+          <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-white-main">
             Some content here Some content hereSome content hereSome content hereSome content hereSome content here Some content hereSome content hereSome content hereSome content hereSome content hereSome content here
           </div>
         </Portal>

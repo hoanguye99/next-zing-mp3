@@ -13,15 +13,17 @@ const MoreInfoCard = (props: MoreInfoCardProps) => {
     <div className=" w-[284px] flex flex-col bg-[#432275] rounded-lg">
       <div className="p-3">
         <div className="flex gap-3">
-          <Image
-            layout="fixed"
-            src={props.imageURL}
-            className="rounded"
-            height={40}
-            width={40}
-          />
+          <div>
+            <Image
+              layout="fixed"
+              src={props.imageURL}
+              className="rounded"
+              height={40}
+              width={40}
+            />
+          </div>
           <div className="flex flex-col text-sm truncate">
-            <p className="text-song">{props.songName}</p>
+            <p className="text-song truncate">{props.songName}</p>
             <div className="flex items-center gap-2 text-[#A0A0A0]">
               <i className="icon before:content-['\3b']"></i>
               <span className="text-artists">{props.likes}</span>

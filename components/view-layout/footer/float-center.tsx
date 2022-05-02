@@ -32,7 +32,7 @@ const FloatCenter = () => {
   }
 
   return (
-    <div className="max-w-xl w-full mx-3 col-span-4 flex flex-col items-center">
+    <div className="w-full mx-3 col-span-4 flex flex-col items-center">
       <div className="flex items-center">
         <div className="flex gap-5">
           <ShuffleButton />

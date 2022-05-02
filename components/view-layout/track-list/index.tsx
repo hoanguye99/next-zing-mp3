@@ -15,7 +15,6 @@ const TrackList = ({open} : TrackListProps) => {
   )
   return (
     <div className={ open ? styles['track-list-open'] : styles['track-list-close']}>
-      <div className="bg-[#120822] w-[330px] overflow-y-auto scroll-none absolute inset-y-0 right-0">
         <div className="flex justify-center text-sm gap-6 my-3">
           <button
             onClick={() => setTrackListType(TrackListType.PLAYING_NEXT)}
@@ -39,7 +38,6 @@ const TrackList = ({open} : TrackListProps) => {
           </button>
         </div>
         <View trackListType={trackListType} />
-      </div>
     </div>
   )
 }

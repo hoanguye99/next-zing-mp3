@@ -9,7 +9,7 @@ type BodyWithTopNavProps = {
 
 const BodyWithNav = ({ children }: BodyWithTopNavProps) => {
   return (
-    <div className="flex-1 bg-purple-main relative">
+    <div className="flex-1 bg-purple-main">
 
       <div className="flex flex-col overflow-y-auto">
         <TopNavigation />

@@ -29,9 +29,9 @@ type SongProps = {
 }
 const Song = ({ artists, thumbnail, title }: SongProps) => {
   return (
-    <div className="flex justify-between p-2 hover:bg-[#40384d] mx-2 rounded-md">
+    <div className="flex justify-between p-2 hover:bg-[#40384d] mx-2 rounded-md group">
       <div className="flex items-center truncate">
-        <div className="relative w-10 h-10 cursor-pointer group bg-[#2A2039] rounded shrink-0">
+        <div className="relative w-10 h-10 cursor-pointer bg-[#2A2039] rounded shrink-0">
           <Image
             src={thumbnail}
             alt=""
@@ -48,10 +48,10 @@ const Song = ({ artists, thumbnail, title }: SongProps) => {
         </div>
       </div>
       <div className="ml-6 flex items-center">
-        <Button className="" hover="Thêm vào thư viện">
+        <Button className="hidden group-hover:block" hover="Thêm vào thư viện">
           <i className="icon before:content-['\3b']"></i>
         </Button>
-        <ExtraInfoButton thumbnail={thumbnail} title={title} />
+        <ExtraInfoButton thumbnail={thumbnail} title={title} className="hidden group-hover:block"/>
       </div>
     </div>
   )

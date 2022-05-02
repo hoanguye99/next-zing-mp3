@@ -1,8 +1,9 @@
 .track-list-open {
-  position: absolute;
-  z-index: 20;
+  @apply bg-[#120822] w-[330px] overflow-y-auto scroll-none;
+  position: fixed;
+  z-index: 10;
   top: 0px;
-  bottom: 0px;
+  bottom: 90px;
   right: 0px;
 
   animation-name: open;
@@ -15,10 +16,11 @@
 }
 
 .track-list-close {
-  position: absolute;
-  z-index: 20;
+  @apply bg-[#120822] w-[330px] overflow-y-auto scroll-none;
+  position: fixed;
+  z-index: 10;
   top: 0px;
-  bottom: 0px;
+  bottom: 90px;
   right: -330px;
 
   animation-name: close;
