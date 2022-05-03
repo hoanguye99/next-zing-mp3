@@ -18,7 +18,7 @@ const FloatLeft = () => {
   return (
     <>
       <div className="md:max-w-sm max-w-xs flex items-center col-span-2">
-        <div className="ml-3 flex items-center truncate">
+        <div className=" flex items-center truncate">
           <div>
             <Image
               layout="fixed"

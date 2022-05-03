@@ -1,0 +1,4 @@
+.card {
+  @apply py-[15px] px-[8px] flex flex-col gap-[10px] rounded-lg;
+  background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+}
