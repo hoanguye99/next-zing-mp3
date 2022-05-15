@@ -1,3 +1,4 @@
+import HomePage from '@/components/home-page'
 import { MainLayout, siteTitle } from '@/components/layout'
 import { NextPageWithLayout } from '@/models'
 import Head from 'next/head'
@@ -10,7 +11,7 @@ const Home: NextPageWithLayout = () => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <p>Main Thing Baby</p>
+      <HomePage/>
     </>
   )
 }
