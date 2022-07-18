@@ -11,7 +11,7 @@ const BodyWithNav = ({ children }: BodyWithTopNavProps) => {
   return (
     <div className="flex-1 bg-purple-main">
 
-      <div className="flex flex-col overflow-y-auto">
+      <div className="flex flex-col overflow-y-auto h-full">
         <TopNavigation />
         <div className="flex-1">
           <div>{children}</div>

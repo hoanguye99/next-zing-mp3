@@ -28,6 +28,83 @@ const HomePage = () => {
         <button onClick={handleDecrementClick}>Decrement</button>
         <button onClick={handleIncrementBy}>Increment By 2</button>
       </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
+      <div>Main Thing Baby</div>
+      <div>Current Value: {counterValue}</div>
+      <div className="flex gap-3">
+        <button onClick={handleIncrementClick}>Increment</button>
+        <button onClick={handleDecrementClick}>Decrement</button>
+        <button onClick={handleIncrementBy}>Increment By 2</button>
+      </div>
     </>
   )
 }
