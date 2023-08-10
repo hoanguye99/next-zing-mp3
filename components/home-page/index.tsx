@@ -21,7 +21,7 @@ const HomePage = () => {
   }
   return (
     <>
-      <div>Main Thing Baby</div>
+      <div>Main Thing Baby. Shut it down</div>
       <div>Current Value: {counterValue}</div>
       <div className="flex gap-3">
         <button onClick={handleIncrementClick}>Increment</button>
